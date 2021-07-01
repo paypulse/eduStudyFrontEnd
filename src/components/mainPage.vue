@@ -47,7 +47,7 @@ export default {
 
         if(userAgent.match(/Chrome/)){
           alert("clcik");
-          location.href = "intent://edulab#Intent;scheme=htmltest;package=com.edulab.htmltest;end";
+         // location.href = "intent://edulab#Intent;scheme=htmltest;package=com.edulab.htmltest;end";
 
         }
 

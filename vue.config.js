@@ -1,7 +1,14 @@
 module.exports = {
-  publicPath: "/study_example_cordova/",
+  publicPath: '',
   pluginOptions: {
     cordovaPath: 'src-cordova'
   },
-  outputDir:'./study_example_cordova'
+  devServer:{
+    proxy: {
+      "^/first": {
+         target: 'http://192.168.50.213:8082',
+         changeOrigin: true
+      }
+    }
+  }
 }
